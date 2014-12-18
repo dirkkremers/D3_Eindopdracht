@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>D3 - Dirk Kremers</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="header_content">
+				<h1>Eindopdracht D3 - Dirk Kremers</h1>
+				<p>Het einde van de opleiding is bijna in zicht. Na 3,5 jaar CMD begin ik in februari 2015 met afstuderen. Voordat ik dit laatste traject in ga, wil ik terugblikken op<br />
+				een mooie periode die ik heb doorlopen tijdens de opleiding. Met het gebruik van (onder meer) de programmeertaal D3 wil ik d.m.v. drie datavisualisaties meer<br /> 
+				inzicht krijgen in mijn resultaten. Deze vind je op onderstaande pagina.</p>
+			</div>
+		</div>
+	
+		<div class="container">
+			<h2>Behaalde cijfers</h2><br />
+			<p>Onderstaande visualisatie weergeeft alle cijfers die ik tijdens de opleiding <i>Communication & Multimedia Design</i><br /> 
+			heb behaald. De hoogte van de staafgrafiek wordt bepaald door het cijfer.</p>
+			<div id="cijfers"></div>
+			<div id="buttons_cijfers">	
+				<div class="wrapper">
+					<button id ="cijfers_jaar1">Jaar 1</button>
+					<button id ="cijfers_jaar2">Jaar 2</button>		
+					<button id ="cijfers_jaar3">Jaar 3</button>		
+					<button id ="cijfers_jaar4">Jaar 4</button>	
+				</div>
+			</div>	
+		</div>
+	
+		<div class="container">		
+			<h2>Toetsvormen</h2><br />
+			<p>De behaalde cijfers kunnen worden onderverdeeld in drie verschillende categoriën. Namelijk praktijkopdrachten,<br />
+			theorietoetsen en procesbeoordelingen.</p>
+			
+			<div id="clearfix">
+				<div id="toetsvorm"></div>		
+				<ul id="toetsvorm_legenda">	
+					<li>
+						<div style="background-color:#203766;"></div>
+						<span>Praktijkopdrachten</span>
+					</li>
+					<li>
+						<div style="background-color:#3a64bb;"></div>
+						<span>Theorietoetsen</span>
+					</li>
+					<li>
+						<div style="background-color:#83a5ee;"></div>
+						<span>Procesbeoordelingen</span>
+					</li>
+				</ul>
+			</div>
+				
+			<div id="buttons_jaren">	
+				<div class="wrapper">
+					<button id="toetsvorm_totaal">Totaal</button>				
+					<button id="toetsvorm_jaar1">Jaar 1</button>
+					<button id="toetsvorm_jaar2">Jaar 2</button>		
+					<button id="toetsvorm_jaar3">Jaar 3</button>		
+					<button id="toetsvorm_jaar4">Jaar 4</button>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<h2>Herkansingen</h2><br>
+			<p>In 3,5 jaar tijd heb ik ook een aantal onvoldoendes behaald. Zoals je in de eerste visualisatie kunt zien, <br /> 
+			is dit voornamelijk in het eerste jaar geweest. In deze visualisatie vind je het cijfer van poging 1, wat<br />
+			resulteerde in een onvoldoende, en het resultaat van poging 2 (de herkansing).</p>
+			<div id="herkansingen"></div>
+			<div id="buttons_herkansingen">	
+				<div class="wrapper">
+					<button id ="cijfers_poging1">Poging 1</button>
+					<button id ="cijfers_poging2">Poging 2</button>		
+				</div>
+			</div>	
+		</div>	
+	
+		<div id="footer">
+			<div id="footer_content">© Dirk Kremers - <small><i>Bron: Avans Hogeschool (Osires)</i></small></div>
+		</div>
+	
+		<script src="js/d3.js"></script>
+		<script src="js/cijfers.js"></script>
+		<script src="js/toetsvorm.js"></script>
+		<script src="js/herkansingen.js"></script>
+		
+		<script>
+			cijfers();
+			toetsvorm();
+			herkansingen();
+		</script>	
+	</body>	
+</html>
+
+	
